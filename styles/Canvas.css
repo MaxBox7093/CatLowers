@@ -1,0 +1,12 @@
+.canvas
+{
+    margin: 15px;
+    max-height: 500px;
+    min-height: 300px;
+    max-width: 800px;
+    min-width: 300px;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: aqua;
+    opacity: .7;
+}
