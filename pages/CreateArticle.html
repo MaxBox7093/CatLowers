@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/Background.css">
     <link rel="stylesheet" href="../styles/Canvas.css">
     <link rel="stylesheet" href="../styles/Help.css">
+    <link rel="stylesheet" href="../styles/CreateArticle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>catlowers.ru</title>
@@ -28,5 +29,37 @@
             <a href="../pages/Login.html"><img class="login" src="../content/images/login.png" alt="login"></a>
         </div>
     </nav>
+    <div class="article-container">
+        <div class="article-content">
+          <h2>Создать статью</h2>
+          <form id="articleForm">
+            <input type="text" name="title" placeholder="Введите заголовок статьи" required>
+      
+            <!-- Категория статьи -->
+            <select name="category" required>
+              <option value="" disabled selected>Выберите категорию</option>
+              <option value="cats">Уход</option>
+              <option value="dogs">Здоровье</option>
+              <option value="birds">Интересные факты</option>
+              <option value="other">Другое</option>
+            </select>
+      
+            <!-- Поле для текста статьи -->
+            <textarea name="content" placeholder="Введите текст статьи" rows="8" required></textarea>
+      
+            <!-- Теги -->
+            <input type="text" name="tags" placeholder="Введите теги через запятую">
+      
+            <!-- Кнопка предпросмотра -->
+            <button type="button" id="previewButton">Предпросмотр</button>
+      
+            <!-- Кнопка публикации -->
+            <button type="submit">Опубликовать статью</button>
+          </form>
+        </div>
+    </div>
+
+    <!-- Подключение внешнего файла с JavaScript -->
+    <script src="../scripts/preview.js"></script>
 </body>
 </html>
